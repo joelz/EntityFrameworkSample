@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2009
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeLogger.Model", "TimeLogger.Model\TimeLogger.Model.csproj", "{31E0E823-DEC2-4096-86ED-9B6AB6098C1C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeLogger.Console", "TimeLogger.Console\TimeLogger.Console.csproj", "{62CE60EE-B170-46E1-BE63-C312DC063545}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{31E0E823-DEC2-4096-86ED-9B6AB6098C1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31E0E823-DEC2-4096-86ED-9B6AB6098C1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31E0E823-DEC2-4096-86ED-9B6AB6098C1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31E0E823-DEC2-4096-86ED-9B6AB6098C1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62CE60EE-B170-46E1-BE63-C312DC063545}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62CE60EE-B170-46E1-BE63-C312DC063545}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62CE60EE-B170-46E1-BE63-C312DC063545}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62CE60EE-B170-46E1-BE63-C312DC063545}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1F78E93D-F3E7-41EA-A9C3-59F444BC32A3}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://jjooeell.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = TimeLogger.Model\\TimeLogger.Model.csproj
+		SccProjectName1 = TimeLogger.Model
+		SccLocalPath1 = TimeLogger.Model
+		SccProjectUniqueName2 = TimeLogger.Console\\TimeLogger.Console.csproj
+		SccProjectName2 = TimeLogger.Console
+		SccLocalPath2 = TimeLogger.Console
+	EndGlobalSection
+EndGlobal
