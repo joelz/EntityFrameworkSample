@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.Entity;
+using System;
 using System.Collections.Generic;
 using System.Data.Common;
 using System.Data.Entity;
@@ -8,6 +9,7 @@ using System.Threading.Tasks;
 
 namespace TimeLogger.Model
 {
+    [DbConfigurationType(typeof(MySqlEFConfiguration))]
     public class TLDbContext : DbContext
     {
         public TLDbContext() { }

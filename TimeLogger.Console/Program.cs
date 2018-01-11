@@ -16,39 +16,40 @@ namespace TimeLogger.Console
         static void Main(string[] args)
         {
             #region 建库
-            /*
 
-            //建库：第一种写法
-            if (!Database.Exists("Name=TLDbContext")) {
-                using (var ctx = new TLDbContext())
-                {
-                    //create a database explicitly 
-                    ctx.Database.Create();
-                }
-            }
 
-            //建库：第二种写法
-            using (var ctx = new TLDbContext())
-            {
-                //will create the database if it doesn’t already exist 
-                var wasCreated = ctx.Database.CreateIfNotExists();
-                System.Console.WriteLine(wasCreated ? "created!" : "creation failed.");
-            }
+            //建库：第一种写法。这种写法在MySQL中不OK了，因为没有 MySql.Data.Database 这个类
+            //if (!Database.Exists("Name=TLDbContextMySQL")) {
+            //    using (var ctx = new TLDbContext("TLDbContextMySQL"))
+            //    {
+            //        //create a database explicitly 
+            //        ctx.Database.Create();
+            //    }
+            //}
 
-            */
+            //建库：第二种写法。这种写法在MySQL中还是OK的。
+            //using (var ctx = new TLDbContext("TLDbContextMySQL"))
+            //{
+            //    //will create the database if it doesn’t already exist 
+            //    var wasCreated = ctx.Database.CreateIfNotExists();
+            //    System.Console.WriteLine(wasCreated ? "created!" : "creation failed.");
+            //}
+
+
             #endregion
 
-            using (var ctx = new TLDbContext())
+            using (var ctx = new TLDbContext("TLDbContextMySQL"))
             {
                 //生成建库脚本
                 //var octx = (ctx as IObjectContextAdapter).ObjectContext;
                 //File.WriteAllText("TLDbContext.sql", octx.CreateDatabaseScript());
 
                 //更新数据
-                //ctx.Projects.AddOrUpdate(x => x.Name, 
-                //    new Project { Name = "First Project", Start = new DateTime(2018, 01, 01) }
+                //ctx.Projects.AddOrUpdate(x => x.Name,
+                //    new Project { Name = "Second Project", Start = new DateTime(2018, 01, 01) }
                 //    );
-                //for (int i = 1; i<100; i++) {
+                //for (int i = 100; i < 110; i++)
+                //{
                 //    ctx.Customers.AddOrUpdate(x => x.Name, new Customer { Name = "Big Customer " + i.ToString() });
                 //}
                 //ctx.SaveChanges();
